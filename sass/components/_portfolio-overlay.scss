@@ -1,0 +1,39 @@
+.overlay {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .overlay__thumb {
+        transform: translateY(0);
+        }
+}
+
+.overlay__thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-bgc;
+
+    transform: translateY(100%);
+    transition: transform 250ms $cubic, opacity 250ms $cubic;
+}
+
+.overlay__text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $white-color;
+    opacity: 0;
+    transition: opacity 250ms $cubic;
+}
+
+.overlay__text:hover {
+    opacity: 1;
+}

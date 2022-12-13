@@ -1,0 +1,32 @@
+.join__form {
+    display: inline-flex;
+    margin-left: 93px;
+}
+
+.join__input {
+    display: block;
+    min-width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $footer-text-color;
+    background-color: $hero-bgc;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.join__button {
+    display: flex;
+    align-self: flex-end;
+    min-width: 200px;
+    height: 50px;
+    padding-left: 28px;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.join__icon {
+    margin-left: 10px;
+}

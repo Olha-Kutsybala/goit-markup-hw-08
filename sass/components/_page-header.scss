@@ -1,0 +1,40 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container,
+.page-header__nav {
+    display: flex;
+    align-items: center;
+}
+.page-header__item {
+    margin-left: 50px;
+}
+.page-header__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: inherit;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+}
+.current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(25%);
+    height: 4px;
+    width: 100%;
+
+    background-color: $accent-color;
+    border-radius: 2px;
+}
+
+.current-item {
+    position: relative;
+}

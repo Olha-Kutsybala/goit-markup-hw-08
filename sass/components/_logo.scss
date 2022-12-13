@@ -1,0 +1,19 @@
+.logo {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    color: $logo-black;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.page-header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.footer__logo {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    color: $white-color;
+}
