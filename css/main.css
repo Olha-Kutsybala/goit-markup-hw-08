@@ -66,7 +66,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -149,7 +149,7 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  .list.page-header__nav,
+  .page-header__list,
 .list.contact {
     display: none;
   }
@@ -161,6 +161,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .page-header__container,
+.page-header__list,
 .page-header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -268,20 +269,23 @@ img {
   list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-menu__link {
   display: block;
   padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  color: #212121;
 }
 
 .logo {
-  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 92px;
+  }
 }
 
 .page-header__logo {
@@ -781,7 +785,7 @@ img {
   }
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 1200px) {
   .clients {
     padding-bottom: 103px;
   }

@@ -12,7 +12,7 @@
     }
 }
 @media screen and (max-width: 767px) {
-    .list.page-header__nav,
+    .page-header__list,
     .list.contact {
         display: none;
     }
@@ -25,6 +25,7 @@
 }
 
 .page-header__container,
+.page-header__list,
 .page-header__nav {
     @media screen and (min-width: 768px) {
         display: flex;
@@ -119,9 +120,8 @@
     list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-menu__link {
     display: block;
     padding: 10px;
-    color: #fff;
-    text-decoration: none;
+    color: $primary-text-color;
 }
