@@ -1,8 +1,14 @@
 .join {
-    display: inline-block;
-    width: 206px;
-    height: 80px;
-    margin-left: 70px;
+    // display: inline-block;
+    // display: block;
+    // width: 206px;
+    // height: 80px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 94px;
+    }
 }
 
 .join__text {
@@ -12,6 +18,7 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $white-color;
+
 }
 
 .social__link--color {

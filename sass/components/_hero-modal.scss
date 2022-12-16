@@ -8,11 +8,12 @@
     transition: opacity 250ms $cubic;
 
     &.is-hidden {
-            opacity: 0;
-            pointer-events: none;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
         }
     &.is-hidden .modal {
-            transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
         }
 }
 // .hero__backdrop.is-hidden .modal {
@@ -24,7 +25,6 @@
     width: 528px;
     height: 581px;
     background-color: $white-color;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);

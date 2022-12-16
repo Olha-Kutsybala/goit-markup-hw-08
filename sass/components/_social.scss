@@ -17,10 +17,12 @@
     align-items: center;
     transition: background-color 250ms $cubic, color 250ms $cubic;
 
+@media screen and (min-width: 1200px) {
     &:hover,
-    &:focus {
-        background-color: $accent-color;
-        fill: $white-color;
+        &:focus {
+            background-color: $accent-color;
+            fill: $white-color;
         }
+}
 }
 

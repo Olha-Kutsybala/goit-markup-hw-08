@@ -1,11 +1,22 @@
 .portfolio {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px){
+        width: 80%;
+    }
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
 }
 
 .portfolio__item {
     margin-right: 8px;
+    @media screen and (max-width: 1199px) {
+       margin-bottom: 15px; 
+    }
 }
 
 .portfolio__button {
