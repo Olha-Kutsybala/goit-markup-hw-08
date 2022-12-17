@@ -91,12 +91,14 @@
 
 .menu-container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 48px 40px;
+    background-color: $white-color;
     z-index: 999;
 
     transform: translateX(100%);
@@ -111,17 +113,44 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
-}
-
-.mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    color: $white-color;
 }
 
 .mobile-menu__link {
     display: block;
-    padding: 10px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
     color: $primary-text-color;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+.mobile-menu {
+    margin-bottom: auto;
+}
+.mobile-menu__link---bottom {
+    margin-bottom: 0;
+}
+.mobile-menu__contact {
+    margin-bottom: 64px;
+}
+.mobile-menu__link--blue {
+    color: $accent-color;
+}
+.mobile-menu__email {
+    line-height: 1.71;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+}
+.mobile-menu__socials {
+    display: flex;
+    color: $accent-color;
+}
+.mobile-menu__item {
+    margin-right: 20px;
 }
