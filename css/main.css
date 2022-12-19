@@ -243,12 +243,15 @@ img {
   margin-left: auto;
 }
 
-.page-header__link--distance {
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
-
-.contact__nav {
+.contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,12 +264,18 @@ img {
   letter-spacing: 0.02em;
   fill: currentColor;
 }
-.contact__nav:hover {
+.contact__link:hover {
   fill: #2196F3;
 }
 
 .contact__icon {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link--distance {
+    margin-right: 40px;
+  }
 }
 
 .menu__button {
@@ -1178,6 +1187,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -1198,14 +1208,6 @@ img {
 .portfolio__container:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio__container--right {
-  margin-right: 30px;
-}
-
-.portfolio__container--bottom {
-  margin-bottom: 30px;
 }
 
 .portfolio__box {

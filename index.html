@@ -38,12 +38,12 @@
             <li class="current-item">
               <a href="./index.html" class="current link page-header__link">Студія</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="link page-header__item page-header__link"
+            <li class="page-header__item">
+              <a href="./portfolio.html" class="link page-header__link"
                 >Портфоліо</a
               >
             </li>
-            <li><a href="" class="link page-header__item page-header__link">Контакти</a></li>
+            <li class="page-header__item"><a href="" class="link page-header__link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="list contact">
@@ -51,7 +51,7 @@
             <a
               href="mailto:info@devstudio.com"
               lang="en"
-              class="link page-header__link--distance contact__nav"
+              class="link contact__link--distance contact__link"
             >
               <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -62,7 +62,7 @@
           <li>
             <a
               href="tel:+380961111111"
-              class="link page-header__link--distance page-header__item contact__nav"
+              class="link contact__link"
             >
               <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -180,7 +180,34 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img src="./images/img.jpg" alt="На фото Ігор Дем'яненко" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/member1.webp 1x, ./images/member1@2x.webp 2x"
+                  media="(max-width: 767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member1.jpg 1x, ./images/member1@2x.jpg 2x"
+                  media="(max-width: 767px"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/member1-tablet.webp 1x, ./images/member1-tablet@2x.webp 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member1-tablet.jpg 1x, ./images/member1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source srcset="./images/member1-desktop.webp 1x, ./images/member1-desktop@2x.webp 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <source srcset="./images/member1-desktop.jpg 1x, ./images/member1-desktop@2x.jpg 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <img src="./images/member1.jpg" alt="На фото Ігор Дем'яненко" />
+              </picture>
+
               <div class="team__meta">
                 <h3 class="team__people">Ігор Дем'яненко</h3>
                 <p class="team__proffesion">Product Designer</p>
@@ -217,7 +244,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img1.jpg" alt="На фото Ольга Рєпіна" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/member2.webp 1x, ./images/member2@2x.webp 2x"
+                  media="(max-width: 767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member2.jpg 1x, ./images/member2@2x.jpg 2x"
+                  media="(max-width: 767px"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/member2-tablet.webp 1x, ./images/member2-tablet@2x.webp 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member2-tablet.jpg 1x, ./images/member2-tablet@2x.jpg 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source srcset="./images/member2-desktop.webp 1x, ./images/member2-desktop@2x.webp 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <source srcset="./images/member2-desktop.jpg 1x, ./images/member2-desktop@2x.jpg 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <img src="./images/member2.jpg" alt="На фото Ольга Рєпіна" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__people">Ольга Рєпіна</h3>
                 <p class="team__proffesion">Frontend Developer</p>
@@ -254,7 +307,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img2.jpg" alt="На фото Микола Тарасов" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/member3.webp 1x, ./images/member3@2x.webp 2x"
+                  media="(max-width: 767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member3.jpg 1x, ./images/member3@2x.jpg 2x"
+                  media="(max-width: 767px"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/member3-tablet.webp 1x, ./images/member3-tablet@2x.webp 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member3-tablet.jpg 1x, ./images/member3-tablet@2x.jpg 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source srcset="./images/member3-desktop.webp 1x, ./images/member3-desktop@2x.webp 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <source srcset="./images/member3-desktop.jpg 1x, ./images/member3-desktop@2x.jpg 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <img src="./images/member3.jpg" alt="На фото Микола Тарасов" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__people">Микола Тарасов</h3>
                 <p class="team__proffesion">Marketing</p>
@@ -291,7 +370,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img3.jpg" alt="На фото Михайло Єрмаков" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/member4.webp 1x, ./images/member4@2x.webp 2x"
+                  media="(max-width: 767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member4.jpg 1x, ./images/member4@2x.jpg 2x"
+                  media="(max-width: 767px"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./images/member4-tablet.webp 1x, ./images/member4-tablet@2x.webp 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/member4-tablet.jpg 1x, ./images/member4-tablet@2x.jpg 2x"
+                  media="(min-width: 768px"
+                  type="image/webp"
+                />
+                <source srcset="./images/member4-desktop.webp 1x, ./images/member4-desktop@2x.webp 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <source srcset="./images/member4-desktop.jpg 1x, ./images/member4-desktop@2x.jpg 2x" media="(min-width: 1200px"
+                  type="image/webp" />
+                <img src="./images/member4.jpg" alt="На фото Михайло Єрмаков" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__people">Михайло Єрмаков</h3>
                 <p class="team__proffesion">UI Designer</p>
@@ -473,7 +578,8 @@
       <ul class="list mobile-menu__contact">
         <li>
           <a href="tel:+380961111111" class="link mobile-menu__link mobile-current">
-            +38 096 111 11 11</a>
+            +38 096 111 11 11</a
+          >
         </li>
         <li>
           <a href="mailto:info@devstudio.com" lang="en" class="link mobile-menu__email">
