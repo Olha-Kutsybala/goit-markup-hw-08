@@ -34,6 +34,8 @@
     transition: opacity 250ms $cubic;
 }
 
-.overlay__text:hover {
+.portfolio__link:hover .overlay__text,
+.portfolio__link:hover .overlay__text {
     opacity: 1;
+    transform: translateY(0)
 }
