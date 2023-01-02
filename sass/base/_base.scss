@@ -1,0 +1,12 @@
+body {
+    color: $primary-text-color;
+    background-color: $white-color;
+    font-family: $primary-text-font;
+    font-size: $primary-font-size;
+    letter-spacing: 0.03em;
+    
+    &.modal-open {
+            overflow: hidden;
+        }
+}
+

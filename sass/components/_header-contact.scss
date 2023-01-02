@@ -1,16 +1,17 @@
 .contact {
-        display: flex;
-        margin-left: auto;
-        
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    .contact {
-        flex-direction: column;
+  display: flex;
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    & {
+      display: none;
     }
-}
-
-.contact__link {
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      flex-direction: column;
+    }
+  }
+  &__link {
     display: flex;
     align-items: center;
     color: $secondary-text-color;
@@ -20,16 +21,17 @@
     fill: currentColor;
 
     &:hover {
-        fill: $accent-color;
+      fill: $accent-color;
     }
-}
+  }
 
-.contact__icon {
+  &__icon {
     margin-right: 10px;
-}
+  }
 
-.contact__link--distance {
+  &__link--distance {
     @media screen and (min-width: 1200px) {
-    margin-right: 40px;
+      margin-right: 40px;
     }
+  }
 }
