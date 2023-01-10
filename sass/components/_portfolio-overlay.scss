@@ -15,7 +15,7 @@
     height: 100%;
     background-color: $overlay-bgc;
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms $cubic, opacity 250ms $cubic;
 }
 
