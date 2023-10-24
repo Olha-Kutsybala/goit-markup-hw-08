@@ -1,3 +1,4 @@
+'use strict';
 const form = document.querySelector('.form_telegram');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
