@@ -627,7 +627,7 @@
             </svg>
           </button>
           <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-          <form name="contact-form" autocomplete="on">
+          <form action="sendmessage.php" method="POST" class="form_telegram"  name="contact-form" autocomplete="on">
             <label class="modal__label" for="name">Ім'я</label>
             <div class="modal__field">
               <input type="text" name="name" class="modal__input" id="name" />
@@ -665,6 +665,7 @@
         </div>
       </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
