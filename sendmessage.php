@@ -9,7 +9,7 @@ if(trim($content)){
     $content = "<b>Message from Site</b>\n".$content;
     $apiToken = "6667312532:AAGbSX8Er9D7YQnTFX5u6QnqyL_S40cnRok";
     $data = [
-        'chat_id' => '@testMusicSchool2Bot',
+        'chat_id' => '@testMusicSchool1Bot',
         'text' => $content,
         'parse_mode' => 'HTML'
     ];
