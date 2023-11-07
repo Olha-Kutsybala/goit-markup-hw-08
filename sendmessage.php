@@ -1,5 +1,6 @@
 
 <?php
+include('config.php');
 $content = '';
 foreach($_POST as $key => $value){
     if($value){
@@ -8,9 +9,9 @@ foreach($_POST as $key => $value){
 }
 if(trim($content)){
     $content = "<b>Message from Site</b>\n".$content;
-    $apiToken = $_ENV['API_TELEGRAM'];
+    $apiToken = $config['API_TELEGRAM'];
     $data = [
-        'chat_id' => $_ENV['CHAT_ID'],
+        'chat_id' => $config['CHAT_ID'],
         'text' => $content,
         'parse_mode' => 'HTML'
     ];
