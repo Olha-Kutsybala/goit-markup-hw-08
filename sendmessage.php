@@ -1,3 +1,4 @@
+
 <?php
 $content = '';
 foreach($_POST as $key => $value){
@@ -7,9 +8,9 @@ foreach($_POST as $key => $value){
 }
 if(trim($content)){
     $content = "<b>Message from Site</b>\n".$content;
-    $apiToken = "6425077337:AAFg0JLNgMJ16QjCW3UxxoEafchRf8HlTxE";
+    $apiToken = $_ENV['API_TELEGRAM'];
     $data = [
-        'chat_id' => '@WebstudioMy',
+        'chat_id' => $_ENV['CHAT_ID'],
         'text' => $content,
         'parse_mode' => 'HTML'
     ];
