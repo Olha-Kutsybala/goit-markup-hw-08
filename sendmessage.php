@@ -7,9 +7,9 @@ foreach($_POST as $key => $value){
 }
 if(trim($content)){
     $content = "<b>Message from Site</b>\n".$content;
-    $apiToken = "6667312532:AAGbSX8Er9D7YQnTFX5u6QnqyL_S40cnRok";
+    $apiToken = "6425077337:AAFg0JLNgMJ16QjCW3UxxoEafchRf8HlTxE";
     $data = [
-        'chat_id' => '@testMusicSchool1Bot',
+        'chat_id' => '@WebstudioMy',
         'text' => $content,
         'parse_mode' => 'HTML'
     ];
