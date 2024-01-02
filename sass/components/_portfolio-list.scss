@@ -1,45 +1,46 @@
 .portfolio__list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .portfolio__container {
-    width: 100%;
-    border: 1px solid #EEEEEE;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 370px;
-        }
+  width: 100%;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .portfolio__container:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__box {
-    padding: 20px 24px;
+  padding: 20px 24px;
 }
 
 .portfolio__title {
-    margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $primary-text-color;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
 }
 
 .portfolio__project {
-    color: $secondary-text-color;
-    font-size: 16px;
-    line-height: 1.9;
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.9;
 }

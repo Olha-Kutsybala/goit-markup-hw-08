@@ -43,7 +43,7 @@
               <a href="./portfolio.html" class="current link page-header__link">Портфоліо</a>
             </li>
             <li class="page-header__item">
-              <a href="" class="link page-header__link">Контакти</a>
+              <a href="#footer" class="link page-header__link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -76,22 +76,26 @@
         <div class="container">
           <ul class="list portfolio">
             <li class="portfolio__item">
-              <button type="button" class="portfolio__button">Усі</button>
+              <button type="button" class="portfolio__button" data-category="all">Усі</button>
             </li>
             <li class="portfolio__item">
-              <button type="button" class="portfolio__button">Веб-сайти</button>
+              <button type="button" class="portfolio__button" data-category="web">Веб-сайти</button>
             </li>
             <li class="portfolio__item">
-              <button type="button" class="portfolio__button">Додатки</button>
+              <button type="button" class="portfolio__button" data-category="app">Додатки</button>
             </li>
             <li class="portfolio__item">
-              <button type="button" class="portfolio__button">Дизайн</button>
+              <button type="button" class="portfolio__button" data-category="design">Дизайн</button>
             </li>
-            <li><button type="button" class="portfolio__button">Маркетинг</button></li>
+            <li>
+              <button type="button" class="portfolio__button" data-category="marketing">
+                Маркетинг
+              </button>
+            </li>
           </ul>
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="list portfolio__list">
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="web">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -150,7 +154,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="design">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -210,7 +214,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="app">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -273,7 +277,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="marketing">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -332,7 +336,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="app">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -392,7 +396,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="web">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -452,7 +456,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="design">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -512,7 +516,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="marketing">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -572,7 +576,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio__container">
+            <li class="portfolio__container" data-category="app">
               <a href="" class="portfolio__link link">
                 <div class="overlay">
                   <picture>
@@ -747,5 +751,6 @@
       </ul>
     </div>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
